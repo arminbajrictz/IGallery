@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBlog">
+
+    <ImageView
+        android:id="@+id/addBlogbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/addblogbg" />
+
+    <TextView
+        android:id="@+id/writeBlogAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Write a blog"
+        android:textAlignment="center"
+        android:textColor="#0F1D8F"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addBlogbg"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/blogPhoto"
+        android:layout_width="153dp"
+        android:layout_height="139dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:onClick="browseBlogPhoto"
+        android:scaleType="centerCrop"
+        android:src="@drawable/deftumb"
+        app:layout_constraintEnd_toStartOf="@+id/paintTitleEditTxtAdd"
+        app:layout_constraintHorizontal_bias="0.644"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/writeBlogAdd" />
+
+    <TextView
+        android:id="@+id/tapTextAddBlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="20dp"
+        android:text="Tap on tumbnail to upload photo"
+        android:textAlignment="center"
+        android:textColor="#0F1D8F"
+        android:textSize="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/blogPhoto" />
+
+    <TextView
+        android:id="@+id/blogTitleTxtV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="284dp"
+        android:text="Blog title :"
+        android:textColor="#0F1D8F"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addBlogbg" />
+
+    <EditText
+        android:id="@+id/blogTitleEdtTxt"
+        android:layout_width="248dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/edttxt_rounded"
+        android:hint="Type blog title"
+        android:inputType="textEmailAddress"
+        android:padding="0dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/addBlogbg" />
+
+    <EditText
+        android:id="@+id/blogEdtTxt"
+        android:layout_width="351dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/edttxt_rounded"
+        android:ems="10"
+        android:hint="Type your blog text"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="@+id/addBlogbg"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/publishButt"
+        android:layout_width="118dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="148dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="publishBlog"
+        android:text="Publish"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/cancelButtAddBl"
+        android:layout_width="118dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressaAdBl"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="131dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/addBlogbg"
+        app:layout_constraintEnd_toEndOf="@+id/addBlogbg"
+        app:layout_constraintStart_toStartOf="@+id/addBlogbg"
+        app:layout_constraintTop_toTopOf="@+id/addBlogbg" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

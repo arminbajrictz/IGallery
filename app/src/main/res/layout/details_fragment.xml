@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/backgroundDetailsFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/detfragbg2" />
+
+    <TextView
+        android:id="@+id/titleTextDetFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Painting title"
+        android:textAlignment="center"
+        android:textColor="#0F1D8F"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag" />
+
+    <ImageView
+        android:id="@+id/photoFrameDetFrag"
+        android:layout_width="286dp"
+        android:layout_height="310dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag"
+         />
+
+    <TextView
+        android:id="@+id/pricePhotDetailsFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="400dp"
+        android:gravity="end"
+        android:text="Price : "
+        android:textAlignment="center"
+        android:textColor="#0F1D8F"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag" />
+
+    <TextView
+        android:id="@+id/onStockDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="end"
+        android:text="On stock/Out of stock"
+        android:textAlignment="center"
+        android:textColor="#0F1D8F"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundDetailsFrag"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag" />
+
+    <TextView
+        android:id="@+id/likesNumDetFrag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="60dp"
+        android:gravity="end"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#0F1D8F"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag" />
+
+    <TextView
+        android:id="@+id/descriptionDetFrag"
+        android:layout_width="198dp"
+        android:layout_height="121dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="432dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="start"
+        android:scrollbars="vertical"
+        android:text="Description:"
+        android:textAlignment="textStart"
+        android:textColor="#0F1D8F"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag" />
+
+
+    <ImageView
+        android:id="@+id/likesIcon"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="403dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/ic_like"
+        app:layout_constraintEnd_toStartOf="@+id/likesNumDetFrag"
+        app:layout_constraintHorizontal_bias="0.996"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag"></ImageView>
+
+    <Button
+        android:id="@+id/backToGallButt"
+        android:layout_width="122dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="564dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="backToGallery"
+        android:text="Back to gallery"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag" />
+
+    <Button
+        android:id="@+id/deletePaintingBut"
+        android:layout_width="122dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="608dp"
+        android:background="@drawable/btn_rounded"
+        android:text="Delete painting"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundDetailsFrag" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

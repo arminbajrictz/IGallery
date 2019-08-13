@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/backgroundRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/registerlastbg" />
+
+    <TextView
+        android:id="@+id/titleTextRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Create your account"
+        android:textAlignment="center"
+        android:textColor="#0F1D8F"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundRegister"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <TextView
+        android:id="@+id/subtitleTextRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Please enter your basic informations :"
+        android:textAlignment="center"
+        android:textColor="#0F1D8F"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextRegister"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <EditText
+        android:id="@+id/emailEditTextRegister"
+        android:layout_width="200dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edttxt_rounded"
+        android:hint="Type your email"
+        android:inputType="textEmailAddress"
+        android:padding="5dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextViewReg"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/passwordEditTextRegister"
+        android:layout_width="200dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edttxt_rounded"
+        android:hint="Type your password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passTextViewReg"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <EditText
+        android:id="@+id/passwordRepeatEditTextRegister"
+        android:layout_width="200dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/edttxt_rounded"
+        android:hint="Repeat your password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+        android:text=""
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/repeatPassTextViewReg"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <TextView
+        android:id="@+id/emailTextViewReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Email"
+        android:textColor="#0F1D8F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleTextRegister"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/passTextViewReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="Password"
+        android:textColor="#0F1D8F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailEditTextRegister"
+        app:layout_constraintVertical_bias="0.01" />
+
+    <TextView
+        android:id="@+id/repeatPassTextViewReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="8dp"
+        android:text="Repeat password"
+        android:textColor="#0F1D8F"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditTextRegister"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <Button
+        android:id="@+id/saveButtonReg"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="saveRegistration"
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subtitleTextRegister"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <Button
+        android:id="@+id/backToMainButt"
+        android:layout_width="118dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/btn_rounded"
+        android:onClick="backHome"
+        android:text="Back to home"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveButtonReg" />
+
+    <ProgressBar
+        android:id="@+id/loadingProgressReg"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="131dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundRegister"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundRegister"
+        app:layout_constraintStart_toStartOf="@+id/backgroundRegister"
+        app:layout_constraintTop_toTopOf="@+id/backgroundRegister" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

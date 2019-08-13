@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "126806287211",
+    "firebase_url": "https://igallery-932bd.firebaseio.com",
+    "project_id": "igallery-932bd",
+    "storage_bucket": "igallery-932bd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126806287211:android:8e0f2ea2f48c32af",
+        "android_client_info": {
+          "package_name": "com.example.igallery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126806287211-j2686ob0coch0lbam10ufi2ms84j7oe9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsvKucJXPdhXTxihFhz-imLlH8N7WS5uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126806287211-j2686ob0coch0lbam10ufi2ms84j7oe9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
